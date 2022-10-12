@@ -1,8 +1,9 @@
-package stepDefinitionAPI_reqRes;
+package StepDefinition_reqRes;
 
+import io.cucumber.java.en.When;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.http.ContentType;
 import org.json.JSONObject;
-import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +19,7 @@ public class ReqResTest {
     private static final String CREATE_USER = "/users";
     private static final String BASE_URI = "https://reqres.in/api";
 
-    @Test
+    @When("^Отправляем запрос и получаем ответ на соответствие$")
     public void createUser() throws IOException {
         File jsonFile = new File("src/main/resources/user.json");
         JSONObject json = new JSONObject(new String(Files.readAllBytes(jsonFile.toPath())));
@@ -27,6 +28,7 @@ public class ReqResTest {
 
 
         HashMap<String, String> responseJson = given()
+                    .filter(new AllureRestAssured())
                     .baseUri(BASE_URI)
                     .contentType(ContentType.JSON)
                     .body(json.toString())

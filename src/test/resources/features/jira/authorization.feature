@@ -1,4 +1,5 @@
-Feature: авторизация
+@Ui
+Feature: UI автотесты по Jira
 
   Scenario: авторизация на тестовом портале Jira
     When Вводим логин suhinina и пароль Qwerty123

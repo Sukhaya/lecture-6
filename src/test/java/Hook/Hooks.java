@@ -13,18 +13,19 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class Hooks extends Configuration {
-    @Before
+    @Before("@Ui")
     public void openUrl() {
         open("https://edujira.ifellow.ru/secure/Dashboard.jspa");
     }
-    @After
+
+    @After("@Ui")
     public void closeDriver() {
         WebDriverRunner.closeWebDriver();
     }
 
     @AfterStep
     public void endStep(Scenario scenario) {
-        if(scenario.isFailed()) {
+        if (scenario.isFailed()) {
             byte[] screenshot = ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
         }

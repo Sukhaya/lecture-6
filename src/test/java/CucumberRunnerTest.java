@@ -9,8 +9,11 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm",
         "html:target/cucumber-html-reports",
         "json:target/cucumber.json"},
-        features = {"src/test/resources/features/projectOpen.feature"},
-        glue = {"Hook","Jira.stepDefinitionJira","RickAndMorty", }
+        features = {"src/test/resources/features"},
+        glue = {"Hook",
+                "Jira.StepDefinition_Jira",
+                "StepDefinition_RickAndMorty",
+                "StepDefinition_reqRes"}
 )
 public class CucumberRunnerTest {
 }

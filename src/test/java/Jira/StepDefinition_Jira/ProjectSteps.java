@@ -1,4 +1,4 @@
-package Jira.stepDefinitionJira;
+package Jira.StepDefinition_Jira;
 
 
 

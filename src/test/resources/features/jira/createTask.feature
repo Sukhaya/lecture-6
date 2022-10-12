@@ -1,3 +1,4 @@
+@Ui
 Feature: Создание задачи
 
   Scenario: Завести задачу в Jira

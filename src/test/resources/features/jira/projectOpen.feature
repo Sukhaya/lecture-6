@@ -1,3 +1,4 @@
+@Ui
 Feature: Открываем проект
 
   Scenario: Переходим в проект TestProject

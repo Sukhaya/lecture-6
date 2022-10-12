@@ -1,4 +1,4 @@
-package Jira.stepDefinitionJira;
+package Jira.StepDefinition_Jira;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

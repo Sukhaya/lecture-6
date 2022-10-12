@@ -4,13 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cabb3d7-5062-412a-8c1d-981f62acf66d" name="Changes" comment="save changes">
+    <list default="true" id="5cabb3d7-5062-412a-8c1d-981f62acf66d" name="Changes" comment="some refactoring (allure+screenshot)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/reqRes/reqRes.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ScreenshotOnFailureTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberRunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hook/AllureHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CucumberRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CucumberRunnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Hook/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hook/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/Hooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/AuthorizationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/StepDefinition_Jira/AuthorizationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/CreateTaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/StepDefinition_Jira/CreateTaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/MainPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/StepDefinition_Jira/MainPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/ProjectSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/StepDefinition_Jira/ProjectSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/ProjectTasksSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/StepDefinition_Jira/ProjectTasksSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jira/stepDefinitionJira/TaskSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jira/StepDefinition_Jira/TaskSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RickAndMorty/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition_RickAndMorty/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RickAndMorty/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition_RickAndMorty/Episode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RickAndMorty/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition_RickAndMorty/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RickAndMorty/RickAndMortySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition_RickAndMorty/RickAndMortySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitionAPI_reqRes/ReqResTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition_reqRes/ReqResTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/authorization.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jira/authorization.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/changeTasksStatus.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jira/changeTasksStatus.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/countProjectTasks.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jira/countProjectTasks.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/createTask.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jira/createTask.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/projectOpen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jira/projectOpen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/projectStatusAndVersion.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/jira/projectStatusAndVersion.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/rickAndMorty.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/rickAndMorty/rickAndMorty.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,29 +56,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mariasuhinina/IdeaProjects/iFellow/lecture_6_all&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/mariasuhinina/IdeaProjects/iFellow/lecture_6_all/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/Jira" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features/jira" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/rickAndMorty" />
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
       <recent name="$PROJECT_DIR$/src/test/java/API" />
       <recent name="$PROJECT_DIR$/src/test" />
-      <recent name="$PROJECT_DIR$/src/test/java" />
-      <recent name="$PROJECT_DIR$/src/test/API" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -74,6 +93,25 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CucumberRunnerTest">
+    <configuration name="Feature: rickAndMorty" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/rickAndMorty/rickAndMorty.feature" />
+      <option name="GLUE" value="StepDefinition_RickAndMorty Hook" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="lecture_6_all" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: rickAndMorty" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: авторизация на тестовом портале Jira" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/authorization.feature" />
@@ -94,15 +132,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Переходим в проект TestProject" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Отправить запрос, сравнив результаты" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/jiraFeatures/projectOpen.feature" />
-      <option name="GLUE" value="Hook Jira.stepDefinitionJira" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/reqRes/reqRes.feature" />
+      <option name="GLUE" value="Hook StepDefinition_reqRes" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="lecture_6_all" />
-      <option name="NAME_FILTER" value="^Переходим в проект TestProject$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Переходим в проект TestProject$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Переходим в проект TestProject" />
+      <option name="NAME_FILTER" value="^Отправить запрос\, сравнив результаты$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Отправить запрос\, сравнив результаты$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Отправить запрос, сравнив результаты" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -114,35 +152,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Отправка запроса, получение информации, сравнение (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/rickAndMorty.feature" />
-      <option name="GLUE" value="Hook Jira.stepDefinitionJira RickAndMorty" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/reqRes/reqRes.feature" />
+      <option name="GLUE" value="Hook StepDefinition_reqRes" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="lecture_6_all" />
-      <option name="NAME_FILTER" value="^Отправка запроса\, получение информации\, сравнение$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Отправка запроса\, получение информации\, сравнение$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Отправка запроса, получение информации, сравнение" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Проверка количества задач в проекте" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/jiraFeatures/countProjectTasks.feature" />
-      <option name="GLUE" value="Hook Jira.stepDefinitionJira" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="lecture_6_all" />
-      <option name="NAME_FILTER" value="^Проверка количества задач в проекте$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Проверка количества задач в проекте$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Проверка количества задач в проекте" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -179,10 +197,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CucumberRunnerTest" />
+        <item itemvalue="Cucumber Java.Feature: rickAndMorty" />
+        <item itemvalue="Cucumber Java.Scenario: Отправить запрос, сравнив результаты" />
+        <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="Cucumber Java.Scenario: авторизация на тестовом портале Jira" />
-        <item itemvalue="Cucumber Java.Scenario: Отправка запроса, получение информации, сравнение (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Переходим в проект TestProject" />
-        <item itemvalue="Cucumber Java.Scenario: Проверка количества задач в проекте" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665602894415</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some refactoring (allure+screenshot)">
+      <created>1665606718338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665606718338</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +243,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="save changes" />
+    <MESSAGE value="some refactoring (allure+screenshot)" />
+    <option name="LAST_COMMIT_MESSAGE" value="some refactoring (allure+screenshot)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
