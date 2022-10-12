@@ -1,21 +1,35 @@
 package utils;
 
-import com.codeborne.selenide.Screenshots;
-import io.qameta.allure.Allure;
+//import io.qameta.allure.Attachment;
+//import io.qameta.allure.Description;
+//import org.junit.rules.TestRule;
+//import org.junit.runners.model.Statement;
+//import org.openqa.selenium.OutputType;
+//import org.openqa.selenium.TakesScreenshot;
+//
+//
+//public class ScreenshotOnFailureTest implements TestRule {
+//    public Statement apply(final Statement statement, final Description description) {
+//        return new Statement() {
+//            @Override
+//            public void evaluate() throws Throwable {
+//                try {
+//                    statement.evaluate();
+//                } catch (Throwable t) {
+//                    captureScreenshot();
+//                    throw t;
+//                }
+//            }
+//
+//            @Attachment
+//            private byte[] captureScreenshot() {
+//                try {
+//                    return ((TakesScreenshot) driver).getScreenshoAs(OutputType.BYTES);
+//                } catch (Exception e) {
+//                    //no need to crash the tests if screenshot fails
+//                }
+//            }
+//        };
+//    }
+//}
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-public class ScreenshotMaker {
-        public void makeScreenshot() {
-            try {
-                File screenshot = Screenshots.takeScreenShotAsFile();
-                InputStream targetStream = new FileInputStream(screenshot);
-                Allure.addAttachment("Screenshot", "image/png", targetStream, "png");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }

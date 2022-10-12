@@ -1,16 +1,15 @@
-package stepDefinitionJira;
+package Jira.stepDefinitionJira;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-
-import static PageElements.CreateTaskPageElements.createIssueSubmitButton;
-import static PageElements.CreateTaskPageElements.issueDescriptionInput;
-import static PageElements.CreateTaskPageElements.issueDescriptionTogglerToText;
-import static PageElements.CreateTaskPageElements.issueSummaryInput;
-import static PageElements.CreateTaskPageElements.issueTypeDropdown;
-import static PageElements.MainPageElements.createTaskButton;
-import static PageElements.MainPageElements.messageSuccess;
+import static Jira.PageElements.CreateTaskPageElements.createIssueSubmitButton;
+import static Jira.PageElements.CreateTaskPageElements.issueDescriptionInput;
+import static Jira.PageElements.CreateTaskPageElements.issueDescriptionTogglerToText;
+import static Jira.PageElements.CreateTaskPageElements.issueSummaryInput;
+import static Jira.PageElements.CreateTaskPageElements.issueTypeDropdown;
+import static Jira.PageElements.MainPageElements.createTaskButton;
+import static Jira.PageElements.MainPageElements.messageSuccess;
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.visible;

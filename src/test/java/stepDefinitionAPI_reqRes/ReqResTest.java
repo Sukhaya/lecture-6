@@ -1,4 +1,4 @@
-package Jira.stepDefinitionAPI_reqRes;
+package stepDefinitionAPI_reqRes;
 
 import io.restassured.http.ContentType;
 import org.json.JSONObject;

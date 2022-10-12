@@ -1,13 +1,13 @@
-package stepDefinitionJira;
-
-import cucumber.api.java.en.When;
+package Jira.stepDefinitionJira;
 
 
 
-import static PageElements.ProjectPageElements.menuButton;
-import static PageElements.ProjectPageElements.softwareVersion;
-import static PageElements.ProjectPageElements.taskStatus;
-import static PageElements.ProjectPageElements.tasks;
+import io.cucumber.java.en.When;
+
+import static Jira.PageElements.ProjectPageElements.menuButton;
+import static Jira.PageElements.ProjectPageElements.softwareVersion;
+import static Jira.PageElements.ProjectPageElements.taskStatus;
+import static Jira.PageElements.ProjectPageElements.tasks;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;

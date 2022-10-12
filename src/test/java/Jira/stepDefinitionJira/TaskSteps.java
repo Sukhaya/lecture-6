@@ -1,16 +1,16 @@
-package stepDefinitionJira;
+package Jira.stepDefinitionJira;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-import static PageElements.ProjectPageElements.taskLink;
-import static PageElements.TaskPageElements.closeNotificationButton;
-import static PageElements.TaskPageElements.inProgressButton;
-import static PageElements.TaskPageElements.notificationPopup;
-import static PageElements.TaskPageElements.resolvedButton;
-import static PageElements.TaskPageElements.statusField;
-import static PageElements.TaskPageElements.toDoButton;
-import static PageElements.TaskPageElements.workFlowButton;
+import static Jira.PageElements.ProjectPageElements.taskLink;
+import static Jira.PageElements.TaskPageElements.closeNotificationButton;
+import static Jira.PageElements.TaskPageElements.inProgressButton;
+import static Jira.PageElements.TaskPageElements.notificationPopup;
+import static Jira.PageElements.TaskPageElements.resolvedButton;
+import static Jira.PageElements.TaskPageElements.statusField;
+import static Jira.PageElements.TaskPageElements.toDoButton;
+import static Jira.PageElements.TaskPageElements.workFlowButton;
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -43,7 +43,7 @@ public class TaskSteps {
         closeNotificationButton.shouldBe(visible).click();
     }
 
-    @Then("Проверяем смену статуса (.*)")
+    @Then("^Проверяем смену статуса (.*)$")
     public void checkTaskStatus(String taskStatus) {
         statusField.shouldHave(text(taskStatus));
     }

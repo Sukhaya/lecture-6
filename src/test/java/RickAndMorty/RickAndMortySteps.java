@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class RickAndMortySteps {
     private static final String BASE_URI = "https://rickandmortyapi.com/api";
 
-    @Given("^Получаем информацию по персонажу$")
+    @Given("Получаем информацию по персонажу")
     public void getRick() {
         List<Character> characters = given()
                 .baseUri(BASE_URI)

@@ -1,13 +1,12 @@
-package stepDefinitionJira;
+package Jira.stepDefinitionJira;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-
-import static PageElements.MainPageElements.projectsMenu;
-import static PageElements.MainPageElements.testTESTProject;
-import static PageElements.ProjectPageElements.projectSidebar;
-import static PageElements.ProjectPageElements.projectTitle;
+import static Jira.PageElements.MainPageElements.projectsMenu;
+import static Jira.PageElements.MainPageElements.testTESTProject;
+import static Jira.PageElements.ProjectPageElements.projectSidebar;
+import static Jira.PageElements.ProjectPageElements.projectTitle;
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.visible;

@@ -1,9 +1,12 @@
-package stepDefinitionJira;
+package Jira.stepDefinitionJira;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import com.codeborne.selenide.WebDriverRunner;
 
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.TakesScreenshot;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -16,4 +19,12 @@ public class Hooks {
     public void closeDriver() {
         WebDriverRunner.closeWebDriver();
     }
+
+    @AfterStep
+    public void endStep(Scenario scenario) {
+        if(scenario.isFailed()) {
+            scenario.attach("Я УПАЛ", "text", "text");
+        }
+    }
+
 }

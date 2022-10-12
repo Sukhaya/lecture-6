@@ -1,11 +1,10 @@
-package stepDefinitionJira;
+package Jira.stepDefinitionJira;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-
-import static PageElements.ProjectPageElements.menuButton;
-import static PageElements.ProjectTasksPageElements.tasksCounter;
+import static Jira.PageElements.ProjectPageElements.menuButton;
+import static Jira.PageElements.ProjectTasksPageElements.tasksCounter;
 import static com.codeborne.selenide.Condition.visible;
 
 public class ProjectTasksSteps {

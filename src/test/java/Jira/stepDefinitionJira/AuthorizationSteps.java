@@ -1,13 +1,13 @@
-package stepDefinitionJira;
+package Jira.stepDefinitionJira;
 
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-import static PageElements.AuthorizationPageElements.loginButton;
-import static PageElements.AuthorizationPageElements.loginField;
-import static PageElements.AuthorizationPageElements.passwordField;
-import static PageElements.MainPageElements.userProfileIcon;
+import static Jira.PageElements.AuthorizationPageElements.loginButton;
+import static Jira.PageElements.AuthorizationPageElements.loginField;
+import static Jira.PageElements.AuthorizationPageElements.passwordField;
+import static Jira.PageElements.MainPageElements.userProfileIcon;
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.enabled;
